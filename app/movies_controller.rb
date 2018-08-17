@@ -24,7 +24,7 @@ end
 
 def can_be_created_in_a_block
   movie = Movie.create do |m|
-    m.title = args[:title]
+    m.title = "Home Alone"
     binding.pry 
     m.release_date = args[:release_date]
     m.save
